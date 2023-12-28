@@ -24,7 +24,11 @@ importers:
         specifier: ^3.2.36
         version: 3.2.36
 
-  examples: {}
+  examples:
+    dependencies:
+      xhir-ui:
+        specifier: workspace:^
+        version: link:../packages/components
 
   packages/components:
     dependencies:
