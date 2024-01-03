@@ -1,0 +1,76 @@
+@import '../../../style/variable.scss';
+
+.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.xh-button {
+  display: inline-block;
+  padding: 20px 12px;
+  border: 1px solid $gray-1;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1.5;
+  }
+}
+
+// 按钮样式
+@mixin button-style($type: $primary-color ) {
+  background-color: $type;
+  color: $white;
+  
+}
+
+.xh-button--primary,
+.xh-button--default {
+  @include button-style($primary-color);
+}
+
+.xh-button--danger {
+  @include button-style($danger-color);
+}
+
+.xh-button--warning {
+  @include button-style($warning-color);
+}
+.xh-button--success {
+  @include button-style($success-color);
+}
+.xh-button--info {
+  @include button-style($info-color);
+}
+
+@mixin button-size($size) {
+  @if $size == 'medium' {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+  } @else if $size == 'small' {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  } @else if $size == 'mini' {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+}
+
+.xh-button--medium {
+  @include button-size('medium');
+}
+.xh-button--small {
+  @include button-size('small');
+}
+.xh-button--mini {
+  @include button-size('mini');
+}

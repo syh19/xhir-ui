@@ -1,7 +1,6 @@
 <template>
-  <div>启动测试</div>
-  <Button />
+  <xh-button type="warning" size="small">启动测试</xh-button>
 </template>
 <script lang="ts" setup>
-import { Button } from 'xhir-ui'
+import { XhButton } from 'xhir-ui'
 </script>
