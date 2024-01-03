@@ -1,0 +1,27 @@
+@import '../../../style/variable.scss';
+.xh-input {
+  display: inline-block;
+  position: relative;
+  &--inner {
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid $gray-3;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+
+  .xh-icon {
+    position: absolute;
+    // 垂直居中
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+  .xh-icon.xh-input--prefix {
+    right: 10px;
+  }
+}
