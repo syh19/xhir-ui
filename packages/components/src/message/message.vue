@@ -2,7 +2,7 @@
   <Transition name="down">
     <div :class="classComptued">
       <xh-icon :name="iconNameMap[type]" class="xh-message--prefix" />
-      <span>{{ text }}</span>
+      <span>{{ props.message }}</span>
     </div>
   </Transition>
 </template>
@@ -11,21 +11,17 @@
 import './style/index.scss'
 import { messageProps } from './message'
 import XhIcon from '../icon'
-import { computed, defineProps, reactive, ref } from 'vue'
-
+import { computed, defineProps, onMounted, reactive, ref } from 'vue'
 
 const props = defineProps(messageProps)
-const iconNameMap = reactive<{[type: string]: string}>({
+const iconNameMap = reactive<{ [type: string]: string }>({
   success: 'check-circle-fill',
-  warning: 'warning-circle-fill'
+  warning: 'warning-circle-fill',
 })
 
 const classComptued = computed(() => {
-  const { type, text, iconName, showClose } = props
-  return [
-    'xh-message',
-    type && `xh-message--${type}`,
-  ]
+  const { type, iconName, showClose, duration } = props
+  console.log('入参', props)
+  return ['xh-message', type && `xh-message--${type}`]
 })
-
 </script>

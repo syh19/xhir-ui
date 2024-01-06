@@ -5,6 +5,7 @@
   position: fixed;
   z-index: 9999;
   left: 50%;
+  transform: translateX(-50%);
   top: 25px;
   padding: 10px 25px;
   border: 1px solid #e4e4e4;
@@ -22,7 +23,7 @@
   }
 }
 
-@mixin message-style($type ) {
+@mixin message-style($type) {
   @if $type == 'success' {
     background-color: $success-color;
   } @else if $type == 'warning' {
@@ -33,13 +34,41 @@
 }
 
 .xh-message--success {
-  @include message-style('success')
+  @include message-style('success');
 }
 
 .xh-message--warning {
-  @include message-style('warning')
+  @include message-style('warning');
 }
 
 .xh-message--info {
-  @include message-style('info')
+  @include message-style('info');
+}
+
+// 添加显示与隐藏的动画效果
+.down {
+  &-enter {
+    &-from {
+      transform: translate3d(0, -75px, 0);
+      opacity: 0;
+    }
+    &-active {
+      transition: all 0.5s;
+    }
+    &-to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  &-from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  &-active {
+    transition: all 0.5s;
+  }
+  &-to {
+    transform: translate3d(0, 75px, 0);
+    opacity: 0;
+  }
 }

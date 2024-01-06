@@ -3,7 +3,7 @@ export const messageProps = {
     type: String,
     default: 'info'
   },
-  text: {
+  message: {
     type: String,
   },
   iconName: {
@@ -13,4 +13,8 @@ export const messageProps = {
     type: Boolean,
     default: false,
   },
+  duration: {
+    type: Number,
+    default: 1500,
+  }
 }
