@@ -5,7 +5,7 @@
 <script lang="ts" setup>
 import './style/index.scss'
 import type { buttonProps } from './types'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 
 // defineOptions({
 //   name: 'XhButton',
@@ -25,6 +25,10 @@ const props: buttonProps = defineProps({
 })
 const classComptued = computed(() => {
   const { type, size } = props
-  return ['xh-button', type && `xh-button--${type}`, size && `xh-button--${size}`]
+  return [
+    'xh-button',
+    type && `xh-button--${type}`,
+    size && `xh-button--${size}`,
+  ]
 })
 </script>

@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import './font/iconfont.js'
 import './style/index.scss'
 const props = defineProps({

@@ -19,7 +19,7 @@
 
 <script lang="ts" setup>
 import './style/index.scss'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import XhIcon from '../icon'
 import { inputProps, inputEmits } from './input'
 

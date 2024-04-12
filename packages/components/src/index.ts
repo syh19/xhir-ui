@@ -6,5 +6,6 @@ import XhButton from './button'
 import XhInput from './input'
 import XhIcon from './icon'
 import XhMessage from './message'
+import XhLink from './link'
 
-export { XhButton, XhInput, XhIcon, XhMessage }
+export { XhButton, XhInput, XhIcon, XhMessage, XhLink }

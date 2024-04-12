@@ -11,7 +11,7 @@
 import './style/index.scss'
 import { messageProps } from './message'
 import XhIcon from '../icon'
-import { computed, defineProps, onMounted, reactive, ref } from 'vue'
+import { computed, onMounted, reactive, ref } from 'vue'
 
 const props = defineProps(messageProps)
 const iconNameMap = reactive<{ [type: string]: string }>({
