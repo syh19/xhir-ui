@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "cd ./examples && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "cd ./site && vitepress dev docs",
+    "docs:build": "cd ./site && vitepress build docs",
+    "docs:preview": "cd ./site && vitepress preview docs"
   },
   "keywords": [],
   "author": "",
