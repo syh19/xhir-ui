@@ -12,7 +12,7 @@ import { computed, defineProps } from 'vue'
 // })
 
 // const props = defineProps<buttonProps>()
-const props = defineProps({
+const props: buttonProps = defineProps({
   type: {
     type: String,
     default: 'default',
