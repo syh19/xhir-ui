@@ -26,7 +26,7 @@ importers:
 
   examples:
     dependencies:
-      xhir-ui:
+      '@xhir-ui/components':
         specifier: workspace:^
         version: link:../packages/components
 
@@ -40,9 +40,12 @@ importers:
 
   site:
     dependencies:
+      '@xhir-ui/components':
+        specifier: workspace:^
+        version: link:../packages/components
       xhir-ui:
         specifier: workspace:1.0.0
-        version: link:../packages/components
+        version: link:..
     devDependencies:
       vitepress:
         specifier: ^1.1.0

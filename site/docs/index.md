@@ -16,5 +16,5 @@ import { XhButton } from 'xhir-ui'
   </div>
 
 <script lang="ts" setup>
-import { XhButton } from "xhir-ui";
+import { XhButton } from "@xhir-ui/components";
 </script>

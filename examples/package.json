@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "xhir-ui": "workspace:^"
+    "@xhir-ui/components": "workspace:^"
   }
 }
