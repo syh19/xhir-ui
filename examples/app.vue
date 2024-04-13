@@ -7,7 +7,7 @@
 </template>
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import { XhButton, XhIcon, XhInput, XhMessage, XhLink, XhTag } from 'packages'
+import { XhButton, XhIcon, XhInput, XhMessage, XhLink, XhTag } from 'xhir-ui'
 
 const inputValue = ref<string>('')
 XhMessage({

@@ -1,21 +1,15 @@
+import type { PropType, ExtractPropTypes } from 'vue'
 
-import { ExtractPropTypes } from 'vue'
+type LinkType =
+  | 'default'
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
 
-
-export const LinkType = ['primary', 'success', 'info', 'warning', 'danger']
-
-
-export const linkProps = {
-    type: {
-        type: String,
-        validator(value: string) {
-            return LinkType.includes(value)
-        }
-    },
-    disabled: Boolean,
-    underline: Boolean
+export type LinkProps = {
+  type: LinkType
+  disabled: boolean
+  underline: boolean
 }
-
-export type LinkProps = ExtractPropTypes<typeof linkProps>
-
-
