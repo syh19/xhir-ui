@@ -54,6 +54,9 @@ importers:
       '@xhir-ui/components':
         specifier: workspace:^
         version: link:../packages/components
+      xhir-ui:
+        specifier: workspace:^
+        version: link:../packages
     devDependencies:
       vitepress:
         specifier: ^1.1.0
