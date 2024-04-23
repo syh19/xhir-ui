@@ -10,7 +10,7 @@ export default {
     logo: "/xhir-ui-logo.jpg",
     nav: [
       { text: "指南", link: "/guide/index" },
-      { text: "组件", link: "/components/icon" },
+      { text: "组件", link: "/components/index" },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/syh19" }],
     sidebar: {
@@ -20,11 +20,11 @@ export default {
           items: [
             {
               text: "安装",
-              link: "/guild/installation",
+              link: "/guide/installation",
             },
             {
               text: "快速开始",
-              link: "/guild/quickstart",
+              link: "/guide/quickstart",
             },
           ],
         },
@@ -44,11 +44,11 @@ export default {
           items: [
             {
               text: "Button按钮",
-              link: "/examples/button/",
+              link: "/components/button",
             },
             {
               text: "Icon图标",
-              link: "/examples/Icon/",
+              link: "/components/icon",
             },
           ],
         },

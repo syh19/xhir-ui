@@ -1,8 +1,8 @@
 ---
 layout: home
 
-title: xhirUI
-titleTemplate: 一个Vue3组件库
+title: xhir-ui
+titleTemplate: 一个 Vue3 组件库
 
 hero:
   name: xhir-ui
@@ -14,12 +14,12 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /docs/installation
+      link: /guide/installation
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/syh19
     - theme: alt
-      text: 博客教程
+      text: GitHub主页
       link: https://github.com/syh19
 
 features:
@@ -33,24 +33,3 @@ features:
     title: 按需引入
     details: 直接支持按需引入无需配置任何插件。
 ---
-
-<!-- ```vue
-<template>
-  <Button>按钮</Button>
-</template>
-
-<script setup>
-import { XhButton } from 'xhir-ui'
-</script>
-```
-
-  <div class="example">
-    <div>
-      <xh-button type="success">成功按钮</xh-button>
-      <xh-button type="danger">失败按钮</xh-button>
-    </div>
-  </div>
-
-<script lang="ts" setup>
-import { XhButton } from "@xhir-ui/components";
-</script> -->

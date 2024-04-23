@@ -51,9 +51,9 @@ importers:
 
   site:
     dependencies:
-      '@xhir-ui/components':
+      examples:
         specifier: workspace:^
-        version: link:../packages/components
+        version: link:../examples
       xhir-ui:
         specifier: workspace:^
         version: link:../packages
